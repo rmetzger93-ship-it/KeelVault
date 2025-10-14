@@ -1,9 +1,9 @@
 ---
 created: 2025-10-14T15:18:00-04:00
-modified: 2025-10-14T15:19:22-04:00
+modified: 2025-10-14T16:21:04-04:00
 ---
 
-# Keel_Charter_v1.0.md
+# Keel_Charter_v1.0
 
 # Keel Charter (v1.0)
 **Last Updated:** 2025-10-14  
