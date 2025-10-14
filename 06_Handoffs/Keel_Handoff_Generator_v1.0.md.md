@@ -1,9 +1,9 @@
 ---
 created: 2025-10-14T16:06:30-04:00
-modified: 2025-10-14T16:20:27-04:00
+modified: 2025-10-14T16:21:18-04:00
 ---
 
-# Keel_Handoff_Generator_v1
+# Keel_Handoff_Generator_v1.0
 
 # Keel Handoff & Summary Generator (v1)
 **Last Updated:** 2025-10-14  
