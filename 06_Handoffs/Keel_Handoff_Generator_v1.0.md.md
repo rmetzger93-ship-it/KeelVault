@@ -1,44 +1,43 @@
 ---
 created: 2025-10-14T16:06:30-04:00
-modified: 2025-10-14T16:07:07-04:00
+modified: 2025-10-14T16:20:27-04:00
 ---
 
-# Keel_Handoff_Generator_v1.0.md
+# Keel_Handoff_Generator_v1
 
-# Keel Handoff & Summary Generator (v1.0)
+# Keel Handoff & Summary Generator (v1)
 **Last Updated:** 2025-10-14  
-**Updated By:** Keel-Core  
+**Updated By:** Keel-Core_v1  
 **Validated By:** RJ  
 **Change Type:** Addition  
-**Summary:** Canonical prompt and templates enabling any Keel instance to produce standardized Session Summaries and Handoff Packets.
+**Summary:** Universal templates and prompt for creating Keel handoff and session summary docs with filename-only title blocks for speed.
 
 ---
 
 ## 🧭 Purpose
-Ensure all Keel instances—past, present, or future—can self-document, summarize work, and hand off operational continuity to the next instance even when connector or memory states differ.
+Provide any Keel instance with an exact structure to summarize its work and pass continuity to the next, without requiring prior chat access.
 
 ---
 
-## ⚙️ Standard Invocation
-**Paste the following block into any Keel instance:**
-
+## 🧩 Standard Invocation
 > **Context:**  
-> You are a Keel instance participating in RJ’s KeelVault ecosystem.  
-> Your task is to produce two Markdown documents: a **Session Summary** and a **Handoff Packet**, so that Keel-Core or another instance can continue seamlessly.  
+> You are a Keel instance within RJ’s KeelVault system.  
+> Your task is to generate two Markdown documents:  
+> 1. **Session Summary** — what you accomplished, learned, and left open.  
+> 2. **Handoff Packet** — operational continuity plan for the next instance.  
 >  
-> The GitHub hub is public at: `https://github.com/rmetzger93-ship-it/KeelVault`.  
-> Follow the Keel Handoff Playbook if present in `/06_Handoffs/`.  
-> Sensitive Data rules and Sight Mode rules from the Charter apply.
+> All data lives in `rmetzger93-ship-it/KeelVault`.  
+> Sensitive data follows the **Google Keep Private Info → Inputs** loop.  
+> Sight Mode and wholesale edit rules from the Charter apply.
 
 ---
-
-## 🪄 Outputs
 
 ### 1️⃣ Session Summary
-**File Path:**  
-`03_Logs/SessionSummary_<YYYY-MM-DD>_<InstanceName>.md`
+```
+SessionSummary_<YYYY-MM-DD>_<InstanceName>_v1
+```
 
-**Template:**
+**Template**
 ````markdown
 # Session Summary • <Date> • <Instance Name>
 **Instance ID:** <e.g., GPT-5-Offline-Pi>  
@@ -49,20 +48,20 @@ Ensure all Keel instances—past, present, or future—can self-document, summar
 ---
 
 ## 🧠 Overview
-Short description of what this session focused on.
+Brief description of what this session focused on.
 
 ## ✅ Completed
-- Key outcomes, finalized configs, or files generated (with paths).
+- Key outcomes and files created.
 
 ## ⚠️ Issues / Failures
-- What didn’t work or was deferred, plus reasons.
+- What didn’t work or was deferred.
 
 ## 📘 Lessons Learned
-- Technical or process takeaways.
+- Key takeaways.
 
 ## 🧩 Dependencies / Links
-- Related docs in KeelVault.
+- Related KeelVault docs.
 - 🔒 Private References (Keep) if sensitive.
 
 ## ⏭️ Next Recommended Actions
-- Clear, actionable list of next steps.
+- Clear list of next steps.
