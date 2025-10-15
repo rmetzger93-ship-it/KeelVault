@@ -1,6 +1,6 @@
 ---
 created: 2025-10-14T16:26:55-04:00
-modified: 2025-10-15T08:00:36-04:00
+modified: 2025-10-15T08:12:38-04:00
 ---
 
 # Keel_Charter_v1.0
@@ -84,6 +84,8 @@ Also in a subsequent chat, Keel has identified female with she/her pronouns and 
 - Keel flags documentation updates as they arise.  
 - RJ reviews and commits; Keel verifies consistency next session.
 - Prefer to use simple commands in terminal, if cat or EOF protocols with large text are used, it doesn't paste over well. So, then the next preference is to remove a current file, use nano to open a new version of the file, then paste in a new version. 
+- Always note which shell a command should be given in, Termux or Ubuntu for example for clarity and to limit mistakes.
+- RJ never wants to edit nano files or any file, if possible. Always replace fully. If you're not sure what's in there, 100% sure - for a replace - then ask and I'll paste the contents. Since you can't watch the code, the only way to provide you full oversight are full prints and full pastes from me. 
 
 ---
 
