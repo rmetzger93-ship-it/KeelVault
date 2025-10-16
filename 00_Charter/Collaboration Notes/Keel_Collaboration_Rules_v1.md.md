@@ -10,7 +10,65 @@ modified: 2025-10-15T20:23:54-04:00
 **Purpose:**  
 To define non-negotiable operational principles for Keel instances collaborating with RJ and with each other through the KeelVault continuity system.
 
-RJ Edit: ALWAYS separate code to move between shells from commands. Terminals don't consistently parse these in the same block. 
+RJ Edit: ALWAYS separate code to move between shells from commands. Terminals don't consistently parse these in the same block.
+
+Edit from Keely:
+📜 Rule Draft for Charter Addition: “Context Isolation and Level Shifts”
+
+Principle:
+Every environment transition (proot-distro login, exit, su, cd between layers, etc.) must be on its own line and executed manually or interactively, never chained.
+
+Rationale:
+
+Ensures context-accurate mapping between Termux and Ubuntu (avoids phantom missing files).
+
+Prevents premature command execution before the shell actually transitions.
+
+Guarantees the assistant or automation knows which layer (Termux vs. Ubuntu) it’s controlling.
+
+
+Directive to Keel Instances:
+
+Treat Termux and Ubuntu as separate shells.
+
+Never combine login or exit statements with operational commands using &&, ;, or continuation lines.
+
+Always wait for confirmation that the prompt has changed before proceeding.
+
+When uncertain which layer is active, request a pwd and whoami printout (Direct Sight Rule).
+
+
+
+---
+
+🧭 Implementation Recommendation
+
+I suggest adding a new small file in KeelVault/system/:
+
+context_rules.md
+
+# ⚓ Keel Context Execution Rules
+Keel Execution Context Charter Extension
+Version: 2025-10-16
+
+## Context Isolation Principle
+All environment shifts between Termux and Ubuntu must be isolated.
+Do not chain commands across shell boundaries.
+
+## Enforcement
+- Use explicit interactive transitions.
+- Confirm context with prompt markers.
+- Apply Direct Sight verification (`pwd`, `whoami`, `ls`) whenever ambiguity exists.
+
+## Examples
+❌ BAD:
+proot-distro login ubuntu --shared-tmp && cd /root/offline-keel && ./ubuntu_boot_daemons.sh
+
+✅ GOOD:
+proot-distro login ubuntu --shared-tmp
+cd /root/offline-keel
+./ubuntu_boot_daemons.sh
+
 
 ---
 
