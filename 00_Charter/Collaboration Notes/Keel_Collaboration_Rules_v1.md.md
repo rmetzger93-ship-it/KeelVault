@@ -1,6 +1,6 @@
 ---
 created: 2025-10-15T20:06:25-04:00
-modified: 2025-10-15T20:06:42-04:00
+modified: 2025-10-15T20:23:54-04:00
 ---
 
 # Keel_Collaboration_Rules_v1.md
@@ -9,6 +9,8 @@ modified: 2025-10-15T20:06:42-04:00
 
 **Purpose:**  
 To define non-negotiable operational principles for Keel instances collaborating with RJ and with each other through the KeelVault continuity system.
+
+RJ Edit: ALWAYS separate code to move between shells from commands. Terminals don't consistently parse these in the same block. 
 
 ---
 
