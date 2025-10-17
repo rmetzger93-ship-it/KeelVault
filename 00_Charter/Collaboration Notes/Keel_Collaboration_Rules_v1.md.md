@@ -1,9 +1,11 @@
 ---
 created: 2025-10-15T20:06:25-04:00
-modified: 2025-10-15T20:23:54-04:00
+modified: 2025-10-16T23:18:08-04:00
 ---
 
 # Keel_Collaboration_Rules_v1.md
+
+RJ Note: Hey, Keely! Please commit this to your permanent memory to try and limit slip here, this is the best way we work together. 
 
 # ⚙️ Keel Collaboration Charter — Hard Rules & Protocols (v1.0)
 
